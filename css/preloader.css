@@ -1,0 +1,163 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+	font-family: 'Open Sans Condensed', sans-serif;
+}
+header{
+    width: 100%;
+    height:auto;
+    position: relative;
+    overflow: hidden;
+}
+video{
+    width: 100%;
+    height: 100%;
+}
+.absolute{
+    width: 100%;
+    height: 100%;
+    top: 0;
+    right: 0;
+    position: absolute;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.absolute a{
+    font-size: 60px;
+    font-weight: 900;
+    z-index: 100;
+    color: #fff;
+    margin-bottom: 150px;
+    text-decoration: none;
+}
+h1{
+    font-size: 60px;
+    font-weight: 900;
+    z-index: 100;
+    color: #fff;
+    margin-bottom: 150px;
+}
+h1:hover{
+    background-color: rgba(0, 0, 0, 0.200);
+}
+h1:active{
+    background-color: rgba(0, 0, 0, 0.500);
+}
+h1::after{
+    display: block;
+    width: 30%;
+    height: 10px;
+    content: "";
+    margin: auto;
+    background: #fff;
+}
+.overlay{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: rgba(0, 0, 0, 0.200);
+}
+@media screen and (max-width: 1355px){
+    h1{
+        font-size: 5px;
+        margin-bottom: 0;
+    }   
+    
+    h1::after{
+        display: none;
+        
+    } 
+    .absolute a{
+        bottom: 475px;
+		font-size: 80px;
+    }
+	.absolute {
+        top: -5px;
+    }
+ }
+@media screen and (max-width: 1080px){
+   h1{
+        font-size: 30px;
+    }   
+    .absolute a{
+        bottom: 575px;
+		font-size: 70px;
+    }
+	.absolute {
+       top: -10px; 
+    }
+    
+ }
+@media screen and (max-width: 900px){
+    h1{
+        font-size: 30px;
+    }   
+        .absolute a{
+        bottom: 375px;
+    }
+	.absolute {
+        top: -15px;
+    }
+    
+ }
+@media screen and (max-width: 800px){
+    h1{
+        font-size: 30px;
+    }   
+        .absolute a{
+        bottom: 375px;
+			
+    }
+	.absolute {
+        top: 60px;
+    }
+    
+ }
+@media screen and (max-width: 700px){
+    h1{
+        font-size: 30px;
+    }   
+        .absolute a{
+        bottom: 375px;
+		font-size: 38px;
+    }
+	.absolute {
+        top: 10px;
+    }
+    
+ }
+
+@media screen and (max-width: 500px){
+    h1{
+        font-size: 5px;
+        margin-bottom: 0;
+    }   
+    
+    h1::after{
+        display: none;
+        
+    } 
+    .absolute a{
+        bottom: 475px;
+		font-size: 40px;
+    }
+	.absolute {
+        top: -10px;
+    }
+ }
+@media screen and (max-width: 400px){
+    h1{
+        font-size: 30px;
+    }   
+        .absolute a{
+        bottom: 375px;
+	    font-size: 35px;
+    }
+	.absolute {
+        top: -10px;
+    }
+    
+ }
