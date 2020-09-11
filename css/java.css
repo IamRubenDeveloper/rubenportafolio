@@ -2,465 +2,465 @@
  /*iniciales de cada elemento*/
 /*----------------------------------------------------------------*/
 *{
-	margin: 0;
-	padding: 0;
-	text-decoration: none;
-	font-family: 'Open Sans Condensed', sans-serif;	
-  }
-  /*La clase cuerpo es el cuerpo literal de nuestra pagina*/
-  /*----------------------------------------------------------------*/
-  body{
-	  background-image:url(../imagenes/caminovintage.jpg);
-	  background-repeat: no-repeat;
-	  background-size: 1500px 1500px;
-	  background-color: rgba(0, 0, 0, 0.200);
-	  background-blend-mode: soft-light;
-  }
-  /*la class header es el menu o la cabecera de nuestra pagina*/
-  /*----------------------------------------------------------------*/
-  /*BOTÓN MENU*/
-  #btn-menu {
-	  display: none;
-  }
-  
-  header label {
-	  font-size: 50px;
-	  cursor: pointer;
-	  color: #fff;
-	  display: none;
-  }
-  
-  .menu a span {
-	  margin-left: 10px;
-  }
-  
-  /*ESTILOS GENERALES*/
-  .menu ul {
-	  list-style: none;
-	  padding: 0;
-  }
-  
-  .menu li {
-	  line-height: 4.5rem;
-	  position: relative;
-  }
-  
-  .menu li ul {
-	  position: absolute;
-  }
-  
-  .menu a {
-	  text-decoration: none;
-	  color: #fff;
-	  font-weight: bold;
-	  font-size: 19px;
-	  display: block;
-	  padding: 0 2.5em;
-	  transition: .1s;
-	  transition: all 1s ease;
-  }
-  
-  .menu a:hover {
-	  background: rgba(0, 0, 0, 0.500);
-  }
-  
-  .menu li ul {
-	  display: none;
-  }
-  
-  .menu li:hover>ul {
-	  display: block;
-  }
-  
-  /*PRIMER NIVEL DE HEADER*/
-  .menu>ul {
-	  background: #4E4E4E;
-	  display: table;
-	  width: 100%;
-  }
-  
-  .menu>ul>li {
-	  float: left;
-  }
-  
-  /*SEGUNDO NIVEL DE HEADER*/
-  .menu li li {
-	  background: #4E4E4E;
-  }
-  
-  /*TERCER NIVEL DE HEADER*/
-  .menu ul ul ul {
-	  left: 100%;
-	  top: 0;
-  }
-  
-  
-  main{
-	width: 80%;
-	height: 700px;
-	margin: auto;
-	margin-top: 10px;
-  
-  }
-  .rectangular{
-	margin-top: 95px;
-	margin-left: 85px;
-	background-color: rgba(0, 0, 0, 0.7);
-	background-blend-mode: soft-light;
-	display: flex;
-	width: 900px;
-	height: 100px;
-	border: 2px solid #4E4E4E;
-	letter-spacing: 1px;
-	font-size: 23px;
-  }
-  .rectangular p{
-	text-align: justify;
-	margin: 10px 10px 10px 10px;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  font-family: 'Open Sans Condensed', sans-serif;	
+}
+/*La clase cuerpo es el cuerpo literal de nuestra pagina*/
+/*----------------------------------------------------------------*/
+body{
+    background-image:url(../imagenes/caminovintage.jpg);
+    background-repeat: no-repeat;
+    background-size: 1500px 1500px;
+    background-color: rgba(0, 0, 0, 0.200);
+    background-blend-mode: soft-light;
+}
+/*la class header es el menu o la cabecera de nuestra pagina*/
+/*----------------------------------------------------------------*/
+/*BOTÓN MENU*/
+#btn-menu {
+	display: none;
+}
+
+header label {
+	font-size: 50px;
+	cursor: pointer;
 	color: #fff;
-	font-size: 21px;
-  }
-  .cajapadre{
-   margin-left: 200px;
-  }
-  .cuadro{
-	background-color: #AFD14D;    
-	width:  170px;
-	height: 130px;
-	float: left;
-	margin-top: 10%;
-	margin-right: 75px;
-  }
-  .cajapadre img{
-	  margin-left: 12px;
-	  width: 80%;
-	  height: 100%;
-  }
-  .textoim1{
-	  text-decoration: none;
-	  color: white;
-	  font-size: 21px;
-  }
-  .textoim2{
-	  text-decoration: none;
-	  color: white;
-	  font-size: 21px;
-  }
-  .textoim3{
-	  text-decoration: none;
-	  color: white;
-  }
-  .textoim4{
-	  text-decoration: none;
-	  color: white;
-  }
-  .textoim5{
-	  text-decoration: none;
-	  color: white;
-	  font-size: 21px;
-  }
-  .textoim6{
-	  text-decoration: none;
-	  color: white;
-	  font-size: 21px;
-  }
-  
-  /*LA CLASS FOOTER ES EL PIE DE PÁGINA*/
-  /*----------------------------------------------------------------*/
-  .footer { 
-	  background-color: #4E4E4E;  
-	  width: 100%;
-	  display: flex;
-	  justify-content: space-between;
-	  align-items: center;
-	  padding: 10 60px;    
-  }
-  .unlist-menu {
-	display: flex;
+	display: none;
+}
+
+.menu a span {
+	margin-left: 10px;
+}
+
+/*ESTILOS GENERALES*/
+.menu ul {
+	list-style: none;
 	padding: 0;
-	margin: 0;
-  }
-  #site-nav ul li{
-	  display: inline-block;      
-  }
-  #site-nav ul li a{
-	  color: white;  
-	  text-decoration: none;
-	  display: block;
-	  padding: 75px 50px;     
-  }
-  .logo img{
-	  width: 20%;
-	  height: 20%;
-	  margin-left: 10%;
-  }
-  /*----------------------------------------------------------------------------------------------------------*/
-  @media screen and (max-width: 1080px) {
-  
-  }	
-  /*----------------------------------------------------------------------------------------------------------*/
-  @media screen and (max-width: 768px) {
-	  label {
-		  margin-left: 35px;
-	  }
-  
-	  header {
-		  height: 4.5rem;
-		  background: #4E4E4E;
-		  color: #fff;
-		  display: flex;
-		  justify-content: flex-start;
-		  align-items: center;
-	  }
-  
-	  header label {
-		  background: #4E4E4E;
-		  display: block;
-  
-	  }
-  
-	  .menu {
-		  position: absolute;
-		  top: 5.9rem;
-		  left: 0;
-		  width: 100%;
-		  transform: translateX(-100%);
-		  transition: all 0.3s;
-	  }
-  
-	  .menu ul {
-		  display: flex;
-		  flex-direction: column;
-		  background: #4E4E4E;
-	  }
-  
-	  .menu ul li:hover ul {
-		  display: none;
-		  position: static;
-	  }
-  
-	  .menu a span {
-		  position: absolute;
-		  right: 25px;
-	  }
-  
-	  #btn-menu:checked~.menu {
-		  transform: translateX(0%);
-	  }
-  
-	  .menu ul ul {
-		  background: rgba(0, 0, 0, 0.4);
-	  }
-  
-  
-	  }
-  /*responsive pc---------------------------------------------------------------------------------------------*/
-  @media screen and (max-width: 682px) {
-  .enca{
-		  height: 100px;
-	  }
-	  .logo{
-		  font-size: 35px;
-		  margin-left: 180px;
-		  margin-top: -17px;
-	  }
-	  nav{
-		  margin-top: -25px;
-		  transform: translateX(-3%);
-		  margin-right: 75px;
-	  }
-	  .enca a{
-		  font-size: 15px;
-		  margin-top: 15px;
-		  margin-left: 15px;
-	  }
-	  
-  }	
-  /*responsive pc---------------------------------------------------------------------------------------------*/
-  @media screen and (max-width: 500px) {
-	  .enca{
-		  height: 100px;
-	  }
-	  .logotitulo{
-		  font-size: 32px;
-		  margin-left: 123px;
-		  margin-top: -17px;
-	  }
-	  nav{
-		  margin-top: -25px;
-		  transform: translateX(-3%);
-		  margin-right: 40px;
-	  }
-	  .enca a{
-		  font-size: 19px;
-		  margin-top: 15px;
-		  margin-left: -8px;
-	  }
-	  body{
-	  background-image:url(../imagenes/caminovintage.jpg);
-	  background-repeat: repeat;
-	  background-size: 900px 1600px;
-	  background-color: rgba(0, 0, 0, 0.300);
-	  background-blend-mode: soft-light;
-	  margin-left: -35px;
-	  margin-bottom: -350px;
-  }
-	  .cuerpo{   
-	width: 300px;
-	height: 2290px;
-	border: none;
-  }
-	  .rectangular{
+}
+
+.menu li {
+	line-height: 4.5rem;
+	position: relative;
+}
+
+.menu li ul {
+	position: absolute;
+}
+
+.menu a {
+	text-decoration: none;
+	color: #fff;
+	font-weight: bold;
+	font-size: 19px;
+	display: block;
+	padding: 0 2.5em;
+	transition: .1s;
+	transition: all 1s ease;
+}
+
+.menu a:hover {
+	background: rgba(0, 0, 0, 0.500);
+}
+
+.menu li ul {
+	display: none;
+}
+
+.menu li:hover>ul {
+	display: block;
+}
+
+/*PRIMER NIVEL DE HEADER*/
+.menu>ul {
+	background: #4E4E4E;
+	display: table;
+	width: 100%;
+}
+
+.menu>ul>li {
+	float: left;
+}
+
+/*SEGUNDO NIVEL DE HEADER*/
+.menu li li {
+	background: #4E4E4E;
+}
+
+/*TERCER NIVEL DE HEADER*/
+.menu ul ul ul {
+	left: 100%;
+	top: 0;
+}
+
+
+main{
+  width: 80%;
+  height: 700px;
+  margin: auto;
+  margin-top: 10px;
+
+}
+.rectangular{
+  margin-top: 95px;
+  margin-left: 85px;
+  background-color: rgba(0, 0, 0, 0.7);
+  background-blend-mode: soft-light;
+  display: flex;
+  width: 900px;
+  height: 100px;
+  border: 2px solid #4E4E4E;
+  letter-spacing: 1px;
+  font-size: 23px;
+}
+.rectangular p{
+  text-align: justify;
+  margin: 10px 10px 10px 10px;
+  color: #fff;
+  font-size: 21px;
+}
+.cajapadre{
+ margin-left: 200px;
+}
+.cuadro{
+  background-color: #AFD14D;    
+  width:  170px;
+  height: 130px;
+  float: left;
+  margin-top: 10%;
+  margin-right: 75px;
+}
+.cajapadre img{
+    margin-left: 12px;
+    width: 80%;
+    height: 100%;
+}
+.textoim1{
+	text-decoration: none;
+	color: white;
+	font-size: 21px;
+}
+.textoim2{
+	text-decoration: none;
+	color: white;
+	font-size: 21px;
+}
+.textoim3{
+	text-decoration: none;
+	color: white;
+}
+.textoim4{
+	text-decoration: none;
+	color: white;
+}
+.textoim5{
+	text-decoration: none;
+	color: white;
+	font-size: 21px;
+}
+.textoim6{
+	text-decoration: none;
+	color: white;
+	font-size: 21px;
+}
+
+/*LA CLASS FOOTER ES EL PIE DE PÁGINA*/
+/*----------------------------------------------------------------*/
+.footer { 
+	background-color: #4E4E4E;  
+	width: 100%;
 	display: flex;
-	margin-left: 20px;
-	margin-top: 110px;
-	width: 300px;
-	height: 260px;		
-	border: 2px solid #4E4E4E;
-	letter-spacing: 2px;
-  }
-	  .cuadro{
-		  margin-top: 70px;
-		  margin-left: -178px;
-		  width: 300px;
-		  height: 260px;
-	  }
-	  .footer { 
-  background-color: #4E4E4E;
-  margin-bottom: -100px;
-  width: 91.9%;
-  height: 5px;
+	justify-content: space-between;
+	align-items: center;
+	padding: 10 60px;    
+}
+.unlist-menu {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 88px 26px;    
-  }
-	  .logo{
-		  display: none;
-	  }
-	  footer a{
-		  text-align: center;
-		  margin-left: 140px;
-		  width: 140px;
-		  height: 50px;
-	  }
-  }
-  /*pixel, pixel xl, plus 6,7,8-------------------------------------------------------------------------------*/
-  @media screen and (max-width: 414px) {
-  .enca{
-		  height: 100px;
-	  }
-	  .logotitulo{
-		  font-size: 35px;
-		  margin-left: 93px;
-		  margin-top: -17px;
-	  }
-	  nav{
-		  margin-top: -25px;
-		  transform: translateX(-3%);
-		  margin-right: 5px;
-	  }
-	  .enca a{
-		  font-size: 19px;
-		  margin-top: 15px;
-		  margin-left: -8px;
-	  }
-	  .footer { 
-  background-color: #4E4E4E;  
-  width: 88.5%;
-  height: 10px;
+  padding: 0;
+  margin: 0;
+}
+#site-nav ul li{
+	display: inline-block;      
+}
+#site-nav ul li a{
+	color: white;  
+	text-decoration: none;
+	display: block;
+	padding: 75px 50px;     
+}
+.logo img{
+	width: 20%;
+	height: 20%;
+	margin-left: 10%;
+}
+/*----------------------------------------------------------------------------------------------------------*/
+@media screen and (max-width: 1080px) {
+
+}	
+/*----------------------------------------------------------------------------------------------------------*/
+@media screen and (max-width: 768px) {
+	label {
+		margin-left: 35px;
+	}
+
+	header {
+		height: 4.5rem;
+		background: #4E4E4E;
+		color: #fff;
+		display: flex;
+		justify-content: flex-start;
+		align-items: center;
+	}
+
+	header label {
+		background: #4E4E4E;
+		display: block;
+
+	}
+
+	.menu {
+		position: absolute;
+		top: 5.9rem;
+		left: 0;
+		width: 100%;
+		transform: translateX(-100%);
+		transition: all 0.3s;
+	}
+
+	.menu ul {
+		display: flex;
+		flex-direction: column;
+		background: #4E4E4E;
+	}
+
+	.menu ul li:hover ul {
+		display: none;
+		position: static;
+	}
+
+	.menu a span {
+		position: absolute;
+		right: 25px;
+	}
+
+	#btn-menu:checked~.menu {
+		transform: translateX(0%);
+	}
+
+	.menu ul ul {
+		background: rgba(0, 0, 0, 0.4);
+	}
+
+
+	}
+/*responsive pc---------------------------------------------------------------------------------------------*/
+@media screen and (max-width: 682px) {
+.enca{
+		height: 100px;
+	}
+	.logo{
+		font-size: 35px;
+		margin-left: 180px;
+		margin-top: -17px;
+	}
+	nav{
+		margin-top: -25px;
+		transform: translateX(-3%);
+		margin-right: 75px;
+	}
+	.enca a{
+		font-size: 15px;
+		margin-top: 15px;
+		margin-left: 15px;
+	}
+	
+}	
+/*responsive pc---------------------------------------------------------------------------------------------*/
+@media screen and (max-width: 500px) {
+	.enca{
+		height: 100px;
+	}
+	.logotitulo{
+		font-size: 32px;
+		margin-left: 123px;
+		margin-top: -17px;
+	}
+	nav{
+		margin-top: -25px;
+		transform: translateX(-3%);
+		margin-right: 40px;
+	}
+	.enca a{
+		font-size: 19px;
+		margin-top: 15px;
+		margin-left: -8px;
+	}
+	body{
+    background-image:url(../imagenes/caminovintage.jpg);
+    background-repeat: repeat;
+    background-size: 900px 1600px;
+    background-color: rgba(0, 0, 0, 0.300);
+    background-blend-mode: soft-light;
+	margin-left: -35px;
+	margin-bottom: -350px;
+}
+	.cuerpo{   
+  width: 300px;
+  height: 2290px;
+  border: none;
+}
+	.rectangular{
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 88px 26px;    
-  }
-	  .logo{
-		  display: none;
-	  }
-	  footer a{
-		  text-align: center;
-		  margin-left: 100px;
-		  width: 140px;
-		  height: 50px;
-	  }
-  }		
-  /*iphone6,7,8,x-------------------------------------------------------------------------------------------------*/
-  @media screen and (max-width: 400px) {
-	  .enca{
-		  height: 95px;
-	  }
-	  .logotitulo{
-		  font-size: 35px;
-		  margin-left: 70px;
-		  margin-top: -15px;
-	  }
-	  nav{
-		  margin-top: -25px;
-		  transform: translateX(-3%);
-		  margin-right: -2px;
-	  }
-	  .enca a{
-		  font-size: 16px;
-		  margin-top: 15px;
-		  margin-left: -2px;
-	  }
-	  .footer { 
-  background-color: #4E4E4E;  
-  width: 87.2%;
-  height: 10px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 88px 26px;    
-  }
-	  .logo{
-		  display: none;
-	  }
-	  footer a{
-		  text-align: center;
-		  margin-left: 75px;
-		  width: 140px;
-		  height: 50px;
-	  }
-	  #site-nav{
-		  width: 100px;
-	  }
-  }
-  /*iphone4----------------------------------------------------------------------------------------------------------*/
-  @media screen and (max-width: 320px) {
-	  .enca{
-		  height: 95px;
-	  }
-	  .logotitulo{
-		  font-size: 30px;
-		  margin-left: 62px;
-		  margin-top: -19px;
-	  }
-	  nav{
-		  margin-top: -25px;
-		  transform: translateX(-3%);
-	  }
-	  .enca a{
-		  font-size: 15px;
-		  margin-top: 15px;
-		  margin-left: -10px;
-	  }
-	  .footer { 
-  background-color: #4E4E4E;  
-  width: 303px;
-  height: 10px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 88px 26px;    
-  }
-	  .logo{
-		  display: none;
-	  }
-	  footer a{
-		  text-align: center;
-		  margin-left: 60px;
-		  width: 140px;
-		  height: 50px;
-	  }		
-  }		
+  margin-left: 20px;
+  margin-top: 110px;
+  width: 300px;
+  height: 260px;		
+  border: 2px solid #4E4E4E;
+  letter-spacing: 2px;
+}
+	.cuadro{
+		margin-top: 70px;
+		margin-left: -178px;
+		width: 300px;
+		height: 260px;
+	}
+	.footer { 
+background-color: #4E4E4E;
+margin-bottom: -100px;
+width: 91.9%;
+height: 5px;
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 88px 26px;    
+}
+	.logo{
+		display: none;
+	}
+	footer a{
+		text-align: center;
+		margin-left: 140px;
+		width: 140px;
+		height: 50px;
+	}
+}
+/*pixel, pixel xl, plus 6,7,8-------------------------------------------------------------------------------*/
+@media screen and (max-width: 414px) {
+.enca{
+		height: 100px;
+	}
+	.logotitulo{
+		font-size: 35px;
+		margin-left: 93px;
+		margin-top: -17px;
+	}
+	nav{
+		margin-top: -25px;
+		transform: translateX(-3%);
+		margin-right: 5px;
+	}
+	.enca a{
+		font-size: 19px;
+		margin-top: 15px;
+		margin-left: -8px;
+	}
+	.footer { 
+background-color: #4E4E4E;  
+width: 88.5%;
+height: 10px;
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 88px 26px;    
+}
+	.logo{
+		display: none;
+	}
+	footer a{
+		text-align: center;
+		margin-left: 100px;
+		width: 140px;
+		height: 50px;
+	}
+}		
+/*iphone6,7,8,x-------------------------------------------------------------------------------------------------*/
+@media screen and (max-width: 400px) {
+	.enca{
+		height: 95px;
+	}
+	.logotitulo{
+		font-size: 35px;
+		margin-left: 70px;
+		margin-top: -15px;
+	}
+	nav{
+		margin-top: -25px;
+		transform: translateX(-3%);
+		margin-right: -2px;
+	}
+	.enca a{
+		font-size: 16px;
+		margin-top: 15px;
+		margin-left: -2px;
+	}
+	.footer { 
+background-color: #4E4E4E;  
+width: 87.2%;
+height: 10px;
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 88px 26px;    
+}
+	.logo{
+		display: none;
+	}
+	footer a{
+		text-align: center;
+		margin-left: 75px;
+		width: 140px;
+		height: 50px;
+	}
+	#site-nav{
+		width: 100px;
+	}
+}
+/*iphone4----------------------------------------------------------------------------------------------------------*/
+@media screen and (max-width: 320px) {
+	.enca{
+		height: 95px;
+	}
+	.logotitulo{
+		font-size: 30px;
+		margin-left: 62px;
+		margin-top: -19px;
+	}
+	nav{
+		margin-top: -25px;
+		transform: translateX(-3%);
+	}
+	.enca a{
+		font-size: 15px;
+		margin-top: 15px;
+		margin-left: -10px;
+	}
+	.footer { 
+background-color: #4E4E4E;  
+width: 303px;
+height: 10px;
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 88px 26px;    
+}
+	.logo{
+		display: none;
+	}
+	footer a{
+		text-align: center;
+		margin-left: 60px;
+		width: 140px;
+		height: 50px;
+	}		
+}		
