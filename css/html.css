@@ -1,76 +1,422 @@
-<!DOCTYPE html>
-<html lang="es" dir="ltr">
-<head>
-    <!---------------------------------------------->
-  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1">
-  <meta name="description" content="Está página está dirigida a un público el cuál quiere aprender y ser muy bueno en todas las áreas de programación digital">
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:ital,wght@0,300;0,700;1,300&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/html.css">
-  <link rel="stylesheet" href="css/fontello.css">
-  <meta charset="UTF-8">
-  <title>HTML</title>
-  </head>
-<!---------------------------------------------->
-  <body>
-<!---------------------------------------------->
-<header>
-  <input type="checkbox" id="btn-menu">
-  <label for="btn-menu" class="icon-menu-outline"></label>
-  <nav class="menu">
-    <ul>
-      <li><a href="inicio.html">Inicio</a></li>
-      <li><a href="miperfil.html">Perfil</a></li>
-      <li class="submenu"><a href="#">Trabajos  <span class="icon-down-open"></span></a>
-        <ul>
-          <li class="submenu"><a href="html.html">HTML  <span class="icon-down-open"></span></a>
-            <ul>
-              <li><a href="css.html">CSS</a></li>
-            </ul>	
-          </li>
-          <li><a href="java.html">JAVA</a></li>
-          <li><a href="programacion.html">PROGRAMACIÓN</a></li>
-        </ul>
-      </li>
-    </ul>	
-        
-  </nav>
-</header>
-
-<!---------------------------------------------->
-  <main class="cuerpo">
-	  <div class="rectangular">
-          <p>HTML es un lenguaje de marcado que se utiliza para el desarrollo de páginas de Internet. Se trata de la siglas que corresponden a HyperText Markup Language. <em><strong>Estos son mis proyectos de HTML que he ido realizando 
-    durante mis 2 años de mi periodo escolar:</strong></em></p></div>
-	  
-<div class="cajapadre">
-  <a href="https://es.wikipedia.org/wiki/HTML"><div class="cuadro"><img src="imagenes/html.png" alt=""><p class="textoim1"><strong>HTML</strong></p></div></a>
-	
-  <a href="#"><div class="cuadro"><img src="imagenes/abrir.png" alt=""><p class="textoim2"><strong>Primer Proyecto</strong></p></div></a>
-	
-  <a href="#"><div class="cuadro"><img src="imagenes/abrir.png" alt=""><p class="textoim3"><strong>Segundo Proyecto</strong></p></div></a>
-	
-  <a href="#"><div class="cuadro"><img src="imagenes/abrir.png" alt=""><p class="textoim4"><strong>Tercer Proyecto</strong></p></div></a>
-	
-  <a href="#"><div class="cuadro"><img src="imagenes/abrir.png" alt=""><p class="textoim5"><strong>Cuarto Proyecto</strong></p></div></a>
-	
-  <a href="#"><div class="cuadro"><img src="imagenes/abrir.png" alt=""><p class="textoim6"><strong>Proyecto Final Con Javascript</strong></p></div></a>
-</div>
-   </main>
-      
-      
- <!---------------------------------------------->     
-  <footer>
-    <div class="footer">
-<a href="#" class="logo"><img src="imagenes/logorub.png" alt=""></a>
-  <nav id="site-nav">
-    <ul class="unlist-menu">
-      <li><a href="https://policies.google.com/privacy?hl=es">Condiciones & Privacidad & Cookies Contactar
-          
-          Benru Ajcú © 2020</a></li>  
-    </ul>
-  </nav>   
-    </div>
-</footer>
-    </body>
-<!---------------------------------------------->
-    </html>
+/*El selector  inidica las propiedades*/
+ /*iniciales de cada elemento*/
+/*----------------------------------------------------------------*/
+*{
+	margin: 0;
+	padding: 0;
+	text-decoration: none;
+	font-family: 'Open Sans Condensed', sans-serif;	
+  }
+  
+  /*La clase cuerpo es el cuerpo literal de nuestra pagina*/
+  /*----------------------------------------------------------------*/
+  body{
+	  background-image:url(../imagenes/caminovintage.jpg);
+	  background-repeat: no-repeat;
+	  background-size: 1500px 1500px;
+	  background-color: rgba(0, 0, 0, 0.200);
+	  background-blend-mode: soft-light;
+  }
+  /*la class header es el menu o la cabecera de nuestra pagina*/
+  /*----------------------------------------------------------------*/
+  /*BOTÓN MENU*/
+  #btn-menu{
+	  display: none;
+  }
+  header label {
+	  font-size: 50px;
+	  cursor: pointer;
+	  color: #fff;
+	  display: none;
+  }
+  .menu a span{
+	  margin-left: 10px;
+  }
+  
+  /*ESTILOS GENERALES*/
+  nav ul {
+	  list-style: none;
+	  padding: 0;
+  }
+  nav li {
+	  line-height: 4.5rem;
+	  position: relative;
+  }
+  nav li ul{
+	  position: absolute;
+  }
+  
+  nav a{ 
+	  text-decoration: none;
+	  color: #fff;
+	  font-weight: bold;
+	  font-size: 19px;
+	  display: block;
+	  padding: 0 2.5em;
+	  transition: .1s;
+	  transition: all 1s ease;
+  }
+  nav a:hover{
+	  background: rgba(0, 0, 0, 0.500);
+  }
+  nav li ul{
+	  display: none;
+  }
+  nav li:hover > ul{
+	  display: block;
+  }
+  
+  /*PRIMER NIVEL DE HEADER*/
+  nav > ul {
+	  background: #4E4E4E;
+	  display: table;
+	  width: 100%;
+  }
+  nav > ul > li {
+	  float: left;
+  }
+  
+  /*SEGUNDO NIVEL DE HEADER*/
+  nav li li {
+	  background: #4E4E4E;
+	  display: none;
+  }
+  
+  /*TERCER NIVEL DE HEADER*/
+  nav ul ul ul{
+	  left: 100%;
+	  top: 0;
+	  display: none;
+  }
+  
+  .rectangular{
+	margin-top: 95px;
+	margin-left: 85px;
+	background-color: rgba(0, 0, 0, 0.7);
+	background-blend-mode: soft-light;
+	display: flex;
+	width: 900px;
+	height: 110px;
+	border: 2px solid #4E4E4E;
+	letter-spacing: 1px;
+	font-size: 23px;
+  }
+  .rectangular p{
+	text-align: justify;
+	margin: 10px 10px 10px 10px;
+	color: #fff;
+  }
+  main{
+	width: 80%;
+	height: 700px;
+	margin: auto;
+	margin-top: 10px;
+  
+  }
+  .cajapadre{
+   margin-left: 200px;
+  }
+  .cuadro{
+	background-color: #A15736;    
+	width:  170px;
+	height: 130px;
+	float: left;
+	margin-top: 10%;
+	margin-right: 75px;
+  }
+  .cajapadre img{
+	  margin-left: 12px;
+	  width: 80%;
+	  height: 100%;
+  }
+  .textoim1{
+  text-decoration: none;
+  color: white;
+  font-size: 21px;
+  }
+  .textoim2{
+  text-decoration: none;
+  color: white;
+  font-size: 21px;
+  }
+  .textoim3{
+  text-decoration: none;
+  color: white;
+  font-size: 21px;	
+  }
+  .textoim4{
+  text-decoration: none;
+  color: white;
+  font-size: 21px;	
+  }
+  .textoim5{
+  text-decoration: none;
+  color: white;
+  font-size: 21px;	
+  }
+  .textoim6{
+  text-decoration: none;
+  color: white;
+  font-size: 21px;	
+  }
+  
+  
+  /*LA CLASS FOOTER ES EL PIE DE PÁGINA*/
+  /*----------------------------------------------------------------*/
+  .footer { 
+  background-color: #4E4E4E;  
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10 60px;    
+  }
+  .unlist-menu {
+	display: flex;
+	padding: 0;
+	margin: 0;
+  }
+  #site-nav ul li{
+	display: inline-block;      
+  }
+  #site-nav ul li a{
+  color: white;  
+  text-decoration: none;
+  display: block;
+  padding: 75px 50px;     
+  }
+  
+  .logo img{
+	width: 20%;
+	height: 20%;
+	margin-left: 10%;
+  }
+  /*----------------------------------------------------------------------------------------------------------*/
+  @media screen and (max-width: 1080px) {
+  
+  }	
+  /*----------------------------------------------------------------------------------------------------------*/
+  @media screen and (max-width: 900px) {
+  
+	  }
+  /*responsive pc---------------------------------------------------------------------------------------------*/
+  @media screen and (max-width: 682px) {
+  .enca{
+		  height: 100px;
+	  }
+	  .logo{
+		  font-size: 35px;
+		  margin-left: 180px;
+		  margin-top: -17px;
+	  }
+	  nav{
+		  margin-top: -25px;
+		  transform: translateX(-3%);
+		  margin-right: 75px;
+	  }
+	  .enca a{
+		  font-size: 15px;
+		  margin-top: 15px;
+		  margin-left: 15px;
+	  }
+  }	
+  /*responsive pc---------------------------------------------------------------------------------------------*/
+  @media screen and (max-width: 500px) {
+	  .enca{
+		  height: 100px;
+	  }
+	  .logotitulo{
+		  font-size: 32px;
+		  margin-left: 123px;
+		  margin-top: -17px;
+	  }
+	  nav{
+		  margin-top: -25px;
+		  transform: translateX(-3%);
+		  margin-right: 40px;
+	  }
+	  .enca a{
+		  font-size: 19px;
+		  margin-top: 15px;
+		  margin-left: -8px;
+	  }
+	  body{
+	  background-image:url(../imagenes/caminovintage.jpg);
+	  background-repeat: repeat;
+	  background-size: 900px 1600px;
+	  background-color: rgba(0, 0, 0, 0.300);
+	  background-blend-mode: soft-light;
+	  margin-left: -35px;
+	  margin-bottom: -350px;
+  }
+	  .cuerpo{   
+	width: 300px;
+	height: 2400px;
+	border: none;
+  }
+	  .rectangular{
+	display: flex;
+	margin-left: 20px;
+	margin-top: 110px;
+	width: 300px;
+	height: 350px;		
+	border: 2px solid #4E4E4E;
+	letter-spacing: 2px;
+  }
+	  .cuadro{
+		  margin-top: 70px;
+		  margin-left: -178px;
+		  width: 300px;
+		  height: 260px;
+	  }
+	  .footer { 
+  background-color: #4E4E4E;
+  margin-bottom: -100px;
+  width: 91.9%;
+  height: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 88px 26px;    
+  }
+	  .logo{
+		  display: none;
+	  }
+	  footer a{
+		  text-align: center;
+		  margin-left: 140px;
+		  width: 140px;
+		  height: 50px;
+	  }
+  }
+  /*pixel, pixel xl, plus 6,7,8-------------------------------------------------------------------------------*/
+  @media screen and (max-width: 414px) {
+  .enca{
+		  height: 100px;
+	  }
+	  .logotitulo{
+		  font-size: 35px;
+		  margin-left: 93px;
+		  margin-top: -17px;
+	  }
+	  nav{
+		  margin-top: -25px;
+		  transform: translateX(-3%);
+		  margin-right: 5px;
+	  }
+	  .enca a{
+		  font-size: 19px;
+		  margin-top: 15px;
+		  margin-left: -8px;
+	  }
+	  .rectangular{
+		  height: 365px;
+	  }
+	  .footer { 
+  background-color: #4E4E4E;  
+  width: 88.5%;
+  height: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 88px 26px;    
+  }
+	  .logo{
+		  display: none;
+	  }
+	  footer a{
+		  text-align: center;
+		  margin-left: 100px;
+		  width: 140px;
+		  height: 50px;
+	  }
+  }	
+  /*iphone6,7,8,x-------------------------------------------------------------------------------------------------*/
+  @media screen and (max-width: 400px) {
+	  .enca{
+		  height: 95px;
+	  }
+	  .logotitulo{
+		  font-size: 35px;
+		  margin-left: 70px;
+		  margin-top: -15px;
+	  }
+	  nav{
+		  margin-top: -25px;
+		  transform: translateX(-3%);
+		  margin-right: -2px;
+	  }
+	  .enca a{
+		  font-size: 16px;
+		  margin-top: 15px;
+		  margin-left: -2px;
+	  }
+	  .rectangular{
+		  height: 365px;
+	  }
+	  .footer { 
+  background-color: #4E4E4E;  
+  width: 87.2%;
+  height: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 88px 26px;    
+  }
+	  .logo{
+		  display: none;
+	  }
+	  footer a{
+		  text-align: center;
+		  margin-left: 75px;
+		  width: 140px;
+		  height: 50px;
+	  }
+	  #site-nav{
+		  width: 100px;
+	  }
+  }
+  /*iphone4----------------------------------------------------------------------------------------------------------*/
+  @media screen and (max-width: 320px) {
+	  .cuerpo{
+		  height: 2370px;
+	  }
+	  .enca{
+		  height: 95px;
+	  }
+	  .logotitulo{
+		  font-size: 30px;
+		  margin-left: 62px;
+		  margin-top: -19px;
+	  }
+	  nav{
+		  margin-top: -25px;
+		  transform: translateX(-3%);
+	  }
+	  .enca a{
+		  font-size: 15px;
+		  margin-top: 15px;
+		  margin-left: -10px;
+	  }
+	  .rectangular{
+		  height: 335px;
+	  }
+	  .footer { 
+  background-color: #4E4E4E;  
+  width: 303px;
+  height: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 88px 26px;    
+  }
+	  .logo{
+		  display: none;
+	  }
+	  footer a{
+		  text-align: center;
+		  margin-left: 60px;
+		  width: 140px;
+		  height: 50px;
+	  }		
+  }		
