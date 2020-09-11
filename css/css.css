@@ -73,14 +73,12 @@
   /*SEGUNDO NIVEL DE HEADER*/
   nav li li {
 	  background: #4E4E4E;
-	  display: none;
   }
   
   /*TERCER NIVEL DE HEADER*/
   nav ul ul ul{
 	  left: 100%;
 	  top: 0;
-	  display: none;
   }
   
   /*La clase CAJONA es la caja con bordes o hijo de la clase cuerpo, padre de la clase cajita*/
