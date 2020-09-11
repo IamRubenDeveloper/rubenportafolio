@@ -29,55 +29,75 @@ body{
 
 /*la class header es el menu o la cabecera de nuestra pagina*/
 /*----------------------------------------------------------------*/
-.enca{
-	background-color: #4E4E4E;
-	overflow: hidden;
-	width: 100%;
-	margin-bottom: 20px;
-	top: 0;
-	left: 0;
-	z-index: 100;
-	position: fixed;
+/*BOTÓN MENU*/
+#btn-menu{
+	display: none;
 }
-.wrapper{
-	width: 90%;
-	max-width: 1180px;
-	margin: auto;
-	overflow: hidden;
-}
-.logotitulo{
-	color: aliceblue;
+header label {
 	font-size: 50px;
-	line-height: 70px;
-	float: left;
+	cursor: pointer;
+	color: #fff;
+	display: none;
 }
-nav{
-	line-height: 70px;
-	float: right;
-}
-nav a{
-	color: white;
-	display: inline-block;
-	text-decoration: none;
-	font-weight: bold;
-	padding: 20px 10px;
-	line-height: normal;
-	font-size: 16px;
-	-webkit-transition:all 500ms ease;
-	transition: all 500ms ease;
-}
-nav a:hover{
-	color:lightgreen;
-	border-bottom: 5px solid lightgreen;
-}
-.textoimyo{
-	margin-top: 5px;
-	margin-left: 0px;
-	text-decoration: none;
-	color: white;
-	font-size: 21px;
+.menu a span{
+	margin-left: 10px;
 }
 
+/*ESTILOS GENERALES*/
+nav ul {
+	list-style: none;
+	padding: 0;
+}
+nav li {
+	line-height: 4.5rem;
+	position: relative;
+}
+nav li ul{
+	position: absolute;
+}
+
+nav a{ 
+	text-decoration: none;
+	color: #fff;
+	font-weight: bold;
+	font-size: 19px;
+	display: block;
+	padding: 0 2.5em;
+	transition: .1s;
+	transition: all 1s ease;
+}
+nav a:hover{
+	background: rgba(0, 0, 0, 0.500);
+}
+nav li ul{
+	display: none;
+}
+nav li:hover > ul{
+	display: block;
+}
+
+/*PRIMER NIVEL DE HEADER*/
+nav > ul {
+	background: #4E4E4E;
+	display: table;
+	width: 100%;
+}
+nav > ul > li {
+	float: left;
+}
+
+/*SEGUNDO NIVEL DE HEADER*/
+nav li li {
+	background: #4E4E4E;
+	display: none;
+}
+
+/*TERCER NIVEL DE HEADER*/
+nav ul ul ul{
+	left: 100%;
+	top: 0;
+	display: none;
+}
 
 /*La clase CAJONA es la caja con bordes o hijo de la clase cuerpo, padre de la clase cajita*/
 /*----------------------------------------------------------------*/
@@ -121,7 +141,7 @@ nav a:hover{
 	color: aliceblue;
 }
 .cajita{
-	margin_left: 30%;
+	margin-left: 30%;
 	width: 35%;
 	height: auto;
 }

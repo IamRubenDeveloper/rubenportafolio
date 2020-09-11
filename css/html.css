@@ -2,395 +2,421 @@
  /*iniciales de cada elemento*/
 /*----------------------------------------------------------------*/
 *{
-  margin: 0;
-  padding: 0;
-  text-decoration: none;
-  font-family: 'Open Sans Condensed', sans-serif;	
-}
-
-/*La clase cuerpo es el cuerpo literal de nuestra pagina*/
-/*----------------------------------------------------------------*/
-body{
-    background-image:url(../imagenes/caminovintage.jpg);
-    background-repeat: no-repeat;
-    background-size: 1500px 1500px;
-    background-color: rgba(0, 0, 0, 0.200);
-    background-blend-mode: soft-light;
-}
-/*la class header es el menu o la cabecera de nuestra pagina*/
-/*----------------------------------------------------------------*/
-.enca{
-	background-color: #4E4E4E;
-	overflow: hidden;
-	width: 100%;
-	margin-bottom: 20px;
-	top: 0;
-	left: 0;
-	z-index: 100;
-	position: fixed;
-}
-.wrapper{
-	width: 90%;
-	max-width: 1180px;
-	margin: auto;
-	overflow: hidden;
-}
-.logotitulo{
-	color: aliceblue;
-	font-size: 50px;
-	line-height: 70px;
-	float: left;
-}
-nav{
-	line-height: 70px;
-	float: right;
-}
-nav a{
-	color: white;
-	display: inline-block;
+	margin: 0;
+	padding: 0;
 	text-decoration: none;
-	font-weight: bold;
-	padding: 20px 10px;
-	line-height: normal;
-	font-size: 16px;
-	-webkit-transition:all 500ms ease;
-	transition: all 500ms ease;
-}
-nav a:hover{
-	color:lightgreen;
-	border-bottom: 5px solid lightgreen;
-}
-.rectangular{
-  margin-top: 95px;
-  margin-left: 85px;
-  background-color: rgba(0, 0, 0, 0.7);
-  background-blend-mode: soft-light;
+	font-family: 'Open Sans Condensed', sans-serif;	
+  }
+  
+  /*La clase cuerpo es el cuerpo literal de nuestra pagina*/
+  /*----------------------------------------------------------------*/
+  body{
+	  background-image:url(../imagenes/caminovintage.jpg);
+	  background-repeat: no-repeat;
+	  background-size: 1500px 1500px;
+	  background-color: rgba(0, 0, 0, 0.200);
+	  background-blend-mode: soft-light;
+  }
+  /*la class header es el menu o la cabecera de nuestra pagina*/
+  /*----------------------------------------------------------------*/
+  /*BOTÓN MENU*/
+  #btn-menu{
+	  display: none;
+  }
+  header label {
+	  font-size: 50px;
+	  cursor: pointer;
+	  color: #fff;
+	  display: none;
+  }
+  .menu a span{
+	  margin-left: 10px;
+  }
+  
+  /*ESTILOS GENERALES*/
+  nav ul {
+	  list-style: none;
+	  padding: 0;
+  }
+  nav li {
+	  line-height: 4.5rem;
+	  position: relative;
+  }
+  nav li ul{
+	  position: absolute;
+  }
+  
+  nav a{ 
+	  text-decoration: none;
+	  color: #fff;
+	  font-weight: bold;
+	  font-size: 19px;
+	  display: block;
+	  padding: 0 2.5em;
+	  transition: .1s;
+	  transition: all 1s ease;
+  }
+  nav a:hover{
+	  background: rgba(0, 0, 0, 0.500);
+  }
+  nav li ul{
+	  display: none;
+  }
+  nav li:hover > ul{
+	  display: block;
+  }
+  
+  /*PRIMER NIVEL DE HEADER*/
+  nav > ul {
+	  background: #4E4E4E;
+	  display: table;
+	  width: 100%;
+  }
+  nav > ul > li {
+	  float: left;
+  }
+  
+  /*SEGUNDO NIVEL DE HEADER*/
+  nav li li {
+	  background: #4E4E4E;
+	  display: none;
+  }
+  
+  /*TERCER NIVEL DE HEADER*/
+  nav ul ul ul{
+	  left: 100%;
+	  top: 0;
+	  display: none;
+  }
+  
+  .rectangular{
+	margin-top: 95px;
+	margin-left: 85px;
+	background-color: rgba(0, 0, 0, 0.7);
+	background-blend-mode: soft-light;
+	display: flex;
+	width: 900px;
+	height: 110px;
+	border: 2px solid #4E4E4E;
+	letter-spacing: 1px;
+	font-size: 23px;
+  }
+  .rectangular p{
+	text-align: justify;
+	margin: 10px 10px 10px 10px;
+	color: #fff;
+  }
+  main{
+	width: 80%;
+	height: 700px;
+	margin: auto;
+	margin-top: 10px;
+  
+  }
+  .cajapadre{
+   margin-left: 200px;
+  }
+  .cuadro{
+	background-color: #A15736;    
+	width:  170px;
+	height: 130px;
+	float: left;
+	margin-top: 10%;
+	margin-right: 75px;
+  }
+  .cajapadre img{
+	  margin-left: 12px;
+	  width: 80%;
+	  height: 100%;
+  }
+  .textoim1{
+  text-decoration: none;
+  color: white;
+  font-size: 21px;
+  }
+  .textoim2{
+  text-decoration: none;
+  color: white;
+  font-size: 21px;
+  }
+  .textoim3{
+  text-decoration: none;
+  color: white;
+  font-size: 21px;	
+  }
+  .textoim4{
+  text-decoration: none;
+  color: white;
+  font-size: 21px;	
+  }
+  .textoim5{
+  text-decoration: none;
+  color: white;
+  font-size: 21px;	
+  }
+  .textoim6{
+  text-decoration: none;
+  color: white;
+  font-size: 21px;	
+  }
+  
+  
+  /*LA CLASS FOOTER ES EL PIE DE PÁGINA*/
+  /*----------------------------------------------------------------*/
+  .footer { 
+  background-color: #4E4E4E;  
+  width: 100%;
   display: flex;
-  width: 900px;
-  height: 110px;
-  border: 2px solid #4E4E4E;
-  letter-spacing: 1px;
-  font-size: 23px;
-}
-.rectangular p{
-  text-align: justify;
-  margin: 10px 10px 10px 10px;
-  color: #fff;
-}
-main{
-  width: 80%;
-  height: 700px;
-  margin: auto;
-  margin-top: 10px;
-
-}
-.cajapadre{
- margin-left: 200px;
-}
-.cuadro{
-  background-color: #A15736;    
-  width:  170px;
-  height: 130px;
-  float: left;
-  margin-top: 10%;
-  margin-right: 75px;
-}
-.cajapadre img{
-    margin-left: 12px;
-    width: 80%;
-    height: 100%;
-}
-.textoim1{
-text-decoration: none;
-color: white;
-font-size: 21px;
-}
-.textoim2{
-text-decoration: none;
-color: white;
-font-size: 21px;
-}
-.textoim3{
-text-decoration: none;
-color: white;
-font-size: 21px;	
-}
-.textoim4{
-text-decoration: none;
-color: white;
-font-size: 21px;	
-}
-.textoim5{
-text-decoration: none;
-color: white;
-font-size: 21px;	
-}
-.textoim6{
-text-decoration: none;
-color: white;
-font-size: 21px;	
-}
-
-
-/*LA CLASS FOOTER ES EL PIE DE PÁGINA*/
-/*----------------------------------------------------------------*/
-.footer { 
-background-color: #4E4E4E;  
-width: 100%;
-display: flex;
-justify-content: space-between;
-align-items: center;
-padding: 10 60px;    
-}
-.unlist-menu {
+  justify-content: space-between;
+  align-items: center;
+  padding: 10 60px;    
+  }
+  .unlist-menu {
+	display: flex;
+	padding: 0;
+	margin: 0;
+  }
+  #site-nav ul li{
+	display: inline-block;      
+  }
+  #site-nav ul li a{
+  color: white;  
+  text-decoration: none;
+  display: block;
+  padding: 75px 50px;     
+  }
+  
+  .logo img{
+	width: 20%;
+	height: 20%;
+	margin-left: 10%;
+  }
+  /*----------------------------------------------------------------------------------------------------------*/
+  @media screen and (max-width: 1080px) {
+  
+  }	
+  /*----------------------------------------------------------------------------------------------------------*/
+  @media screen and (max-width: 900px) {
+  
+	  }
+  /*responsive pc---------------------------------------------------------------------------------------------*/
+  @media screen and (max-width: 682px) {
+  .enca{
+		  height: 100px;
+	  }
+	  .logo{
+		  font-size: 35px;
+		  margin-left: 180px;
+		  margin-top: -17px;
+	  }
+	  nav{
+		  margin-top: -25px;
+		  transform: translateX(-3%);
+		  margin-right: 75px;
+	  }
+	  .enca a{
+		  font-size: 15px;
+		  margin-top: 15px;
+		  margin-left: 15px;
+	  }
+  }	
+  /*responsive pc---------------------------------------------------------------------------------------------*/
+  @media screen and (max-width: 500px) {
+	  .enca{
+		  height: 100px;
+	  }
+	  .logotitulo{
+		  font-size: 32px;
+		  margin-left: 123px;
+		  margin-top: -17px;
+	  }
+	  nav{
+		  margin-top: -25px;
+		  transform: translateX(-3%);
+		  margin-right: 40px;
+	  }
+	  .enca a{
+		  font-size: 19px;
+		  margin-top: 15px;
+		  margin-left: -8px;
+	  }
+	  body{
+	  background-image:url(../imagenes/caminovintage.jpg);
+	  background-repeat: repeat;
+	  background-size: 900px 1600px;
+	  background-color: rgba(0, 0, 0, 0.300);
+	  background-blend-mode: soft-light;
+	  margin-left: -35px;
+	  margin-bottom: -350px;
+  }
+	  .cuerpo{   
+	width: 300px;
+	height: 2400px;
+	border: none;
+  }
+	  .rectangular{
+	display: flex;
+	margin-left: 20px;
+	margin-top: 110px;
+	width: 300px;
+	height: 350px;		
+	border: 2px solid #4E4E4E;
+	letter-spacing: 2px;
+  }
+	  .cuadro{
+		  margin-top: 70px;
+		  margin-left: -178px;
+		  width: 300px;
+		  height: 260px;
+	  }
+	  .footer { 
+  background-color: #4E4E4E;
+  margin-bottom: -100px;
+  width: 91.9%;
+  height: 5px;
   display: flex;
-  padding: 0;
-  margin: 0;
-}
-#site-nav ul li{
-  display: inline-block;      
-}
-#site-nav ul li a{
-color: white;  
-text-decoration: none;
-display: block;
-padding: 75px 50px;     
-}
-
-.logo img{
-  width: 20%;
-  height: 20%;
-  margin-left: 10%;
-}
-/*----------------------------------------------------------------------------------------------------------*/
-@media screen and (max-width: 1080px) {
-
-}	
-/*----------------------------------------------------------------------------------------------------------*/
-@media screen and (max-width: 900px) {
-
-	}
-/*responsive pc---------------------------------------------------------------------------------------------*/
-@media screen and (max-width: 682px) {
-.enca{
-		height: 100px;
-	}
-	.logo{
-		font-size: 35px;
-		margin-left: 180px;
-		margin-top: -17px;
-	}
-	nav{
-		margin-top: -25px;
-		transform: translateX(-3%);
-		margin-right: 75px;
-	}
-	.enca a{
-		font-size: 15px;
-		margin-top: 15px;
-		margin-left: 15px;
-	}
-}	
-/*responsive pc---------------------------------------------------------------------------------------------*/
-@media screen and (max-width: 500px) {
-	.enca{
-		height: 100px;
-	}
-	.logotitulo{
-		font-size: 32px;
-		margin-left: 123px;
-		margin-top: -17px;
-	}
-	nav{
-		margin-top: -25px;
-		transform: translateX(-3%);
-		margin-right: 40px;
-	}
-	.enca a{
-		font-size: 19px;
-		margin-top: 15px;
-		margin-left: -8px;
-	}
-	body{
-    background-image:url(../imagenes/caminovintage.jpg);
-    background-repeat: repeat;
-    background-size: 900px 1600px;
-    background-color: rgba(0, 0, 0, 0.300);
-    background-blend-mode: soft-light;
-	margin-left: -35px;
-	margin-bottom: -350px;
-}
-	.cuerpo{   
-  width: 300px;
-  height: 2400px;
-  border: none;
-}
-	.rectangular{
+  justify-content: space-between;
+  align-items: center;
+  padding: 88px 26px;    
+  }
+	  .logo{
+		  display: none;
+	  }
+	  footer a{
+		  text-align: center;
+		  margin-left: 140px;
+		  width: 140px;
+		  height: 50px;
+	  }
+  }
+  /*pixel, pixel xl, plus 6,7,8-------------------------------------------------------------------------------*/
+  @media screen and (max-width: 414px) {
+  .enca{
+		  height: 100px;
+	  }
+	  .logotitulo{
+		  font-size: 35px;
+		  margin-left: 93px;
+		  margin-top: -17px;
+	  }
+	  nav{
+		  margin-top: -25px;
+		  transform: translateX(-3%);
+		  margin-right: 5px;
+	  }
+	  .enca a{
+		  font-size: 19px;
+		  margin-top: 15px;
+		  margin-left: -8px;
+	  }
+	  .rectangular{
+		  height: 365px;
+	  }
+	  .footer { 
+  background-color: #4E4E4E;  
+  width: 88.5%;
+  height: 10px;
   display: flex;
-  margin-left: 20px;
-  margin-top: 110px;
-  width: 300px;
-  height: 350px;		
-  border: 2px solid #4E4E4E;
-  letter-spacing: 2px;
-}
-	.cuadro{
-		margin-top: 70px;
-		margin-left: -178px;
-		width: 300px;
-		height: 260px;
-	}
-	.textoim1{
-		
-	}
-	.footer { 
-background-color: #4E4E4E;
-margin-bottom: -100px;
-width: 91.9%;
-height: 5px;
-display: flex;
-justify-content: space-between;
-align-items: center;
-padding: 88px 26px;    
-}
-	.logo{
-		display: none;
-	}
-	footer a{
-		text-align: center;
-		margin-left: 140px;
-		width: 140px;
-		height: 50px;
-	}
-}
-/*pixel, pixel xl, plus 6,7,8-------------------------------------------------------------------------------*/
-@media screen and (max-width: 414px) {
-.enca{
-		height: 100px;
-	}
-	.logotitulo{
-		font-size: 35px;
-		margin-left: 93px;
-		margin-top: -17px;
-	}
-	nav{
-		margin-top: -25px;
-		transform: translateX(-3%);
-		margin-right: 5px;
-	}
-	.enca a{
-		font-size: 19px;
-		margin-top: 15px;
-		margin-left: -8px;
-	}
-	.rectangular{
-		height: 365px;
-	}
-	.footer { 
-background-color: #4E4E4E;  
-width: 88.5%;
-height: 10px;
-display: flex;
-justify-content: space-between;
-align-items: center;
-padding: 88px 26px;    
-}
-	.logo{
-		display: none;
-	}
-	footer a{
-		text-align: center;
-		margin-left: 100px;
-		width: 140px;
-		height: 50px;
-	}
-}	
-/*iphone6,7,8,x-------------------------------------------------------------------------------------------------*/
-@media screen and (max-width: 400px) {
-	.enca{
-		height: 95px;
-	}
-	.logotitulo{
-		font-size: 35px;
-		margin-left: 70px;
-		margin-top: -15px;
-	}
-	nav{
-		margin-top: -25px;
-		transform: translateX(-3%);
-		margin-right: -2px;
-	}
-	.enca a{
-		font-size: 16px;
-		margin-top: 15px;
-		margin-left: -2px;
-	}
-	.rectangular{
-		height: 365px;
-	}
-	.footer { 
-background-color: #4E4E4E;  
-width: 87.2%;
-height: 10px;
-display: flex;
-justify-content: space-between;
-align-items: center;
-padding: 88px 26px;    
-}
-	.logo{
-		display: none;
-	}
-	footer a{
-		text-align: center;
-		margin-left: 75px;
-		width: 140px;
-		height: 50px;
-	}
-	#site-nav{
-		width: 100px;
-	}
-}
-/*iphone4----------------------------------------------------------------------------------------------------------*/
-@media screen and (max-width: 320px) {
-	.cuerpo{
-		height: 2370px;
-	}
-	.enca{
-		height: 95px;
-	}
-	.logotitulo{
-		font-size: 30px;
-		margin-left: 62px;
-		margin-top: -19px;
-	}
-	nav{
-		margin-top: -25px;
-		transform: translateX(-3%);
-	}
-	.enca a{
-		font-size: 15px;
-		margin-top: 15px;
-		margin-left: -10px;
-	}
-	.rectangular{
-		height: 335px;
-	}
-	.footer { 
-background-color: #4E4E4E;  
-width: 303px;
-height: 10px;
-display: flex;
-justify-content: space-between;
-align-items: center;
-padding: 88px 26px;    
-}
-	.logo{
-		display: none;
-	}
-	footer a{
-		text-align: center;
-		margin-left: 60px;
-		width: 140px;
-		height: 50px;
-	}		
-}		
+  justify-content: space-between;
+  align-items: center;
+  padding: 88px 26px;    
+  }
+	  .logo{
+		  display: none;
+	  }
+	  footer a{
+		  text-align: center;
+		  margin-left: 100px;
+		  width: 140px;
+		  height: 50px;
+	  }
+  }	
+  /*iphone6,7,8,x-------------------------------------------------------------------------------------------------*/
+  @media screen and (max-width: 400px) {
+	  .enca{
+		  height: 95px;
+	  }
+	  .logotitulo{
+		  font-size: 35px;
+		  margin-left: 70px;
+		  margin-top: -15px;
+	  }
+	  nav{
+		  margin-top: -25px;
+		  transform: translateX(-3%);
+		  margin-right: -2px;
+	  }
+	  .enca a{
+		  font-size: 16px;
+		  margin-top: 15px;
+		  margin-left: -2px;
+	  }
+	  .rectangular{
+		  height: 365px;
+	  }
+	  .footer { 
+  background-color: #4E4E4E;  
+  width: 87.2%;
+  height: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 88px 26px;    
+  }
+	  .logo{
+		  display: none;
+	  }
+	  footer a{
+		  text-align: center;
+		  margin-left: 75px;
+		  width: 140px;
+		  height: 50px;
+	  }
+	  #site-nav{
+		  width: 100px;
+	  }
+  }
+  /*iphone4----------------------------------------------------------------------------------------------------------*/
+  @media screen and (max-width: 320px) {
+	  .cuerpo{
+		  height: 2370px;
+	  }
+	  .enca{
+		  height: 95px;
+	  }
+	  .logotitulo{
+		  font-size: 30px;
+		  margin-left: 62px;
+		  margin-top: -19px;
+	  }
+	  nav{
+		  margin-top: -25px;
+		  transform: translateX(-3%);
+	  }
+	  .enca a{
+		  font-size: 15px;
+		  margin-top: 15px;
+		  margin-left: -10px;
+	  }
+	  .rectangular{
+		  height: 335px;
+	  }
+	  .footer { 
+  background-color: #4E4E4E;  
+  width: 303px;
+  height: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 88px 26px;    
+  }
+	  .logo{
+		  display: none;
+	  }
+	  footer a{
+		  text-align: center;
+		  margin-left: 60px;
+		  width: 140px;
+		  height: 50px;
+	  }		
+  }		
